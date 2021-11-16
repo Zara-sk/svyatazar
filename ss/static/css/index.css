@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Evolventa"; 
+	src: url("../fonts/Evolventa-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "Evolventa"; 
+	src: url("../fonts/Evolventa-Oblique.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: italic; 
+} 
+
+@font-face {
+	font-family: "Evolventa"; 
+	src: url("../fonts/Evolventa-Bold.ttf") format("truetype"); 
+	font-style: bold; 
+	font-weight: normal; 
+} 
+
+body {
+	background: #11052C;
+	height: 90vh;
+}
+
+body .text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text h1, .text a {
+	color:  #EEE;
+	font-size: 12vh;
+	margin: 0;
+	cursor: default;
+	font-family: "Evolventa";
+}
+
+.text a {
+	text-shadow: none;
+	color:  #EEE;
+	text-decoration: none; 
+	transition: all 0.5s;
+	-webkit-text-stroke: 0;
+}
+
+.text a:hover {
+	-webkit-text-stroke: 3px #d6f4f4;
+	font-size: 13vh;
+	color: transparent;
+	text-shadow: 
+		10px 10px 0px  #07bccc,
+		15px 15px 0px  #FFE459,
+		20px 20px 0px  #F43B86,
+		25px 25px 0px  #3D087B,
+		45px 45px 10px #482896;
+	cursor: pointer;
+}
